@@ -102,7 +102,7 @@ public class Selenium_calculator {
 
 		browser.findElement(By.id("button05")).click();
 		browser.findElement(By.id("buttonminus")).click();
-		browser.findElement(By.id("button03")).click();
+		browser.findElement(By.id("button05")).click();
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
@@ -114,7 +114,7 @@ public class Selenium_calculator {
 
 		String result= browser.findElement(By.id("calculated-display")).getAttribute("value").toString();
 		System.out.println(result);	
-		String Expected= "2";
+		String Expected= "0";
 		assertEquals(Expected,result);
 
 	}
@@ -144,9 +144,9 @@ public class Selenium_calculator {
 	public void Tests6() {
 
 
-		browser.findElement(By.id("button05")).click();
+		browser.findElement(By.id("button00")).click();
 		browser.findElement(By.id("buttonmultiply")).click();
-		browser.findElement(By.id("button03")).click();
+		browser.findElement(By.id("button02")).click();
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
@@ -158,7 +158,7 @@ public class Selenium_calculator {
 
 		String result= browser.findElement(By.id("calculated-display")).getAttribute("value").toString();
 		System.out.println(result);	
-		String Expected= "15";
+		String Expected= "0";
 		assertEquals(Expected,result);
 
 	}
@@ -187,7 +187,7 @@ public class Selenium_calculator {
 	public void Tests8() {
 
 
-		browser.findElement(By.id("button09")).click();
+		browser.findElement(By.id("button00")).click();
 		browser.findElement(By.id("buttondivide")).click();
 		browser.findElement(By.id("button03")).click();
 		try {
@@ -201,7 +201,7 @@ public class Selenium_calculator {
 
 		String result= browser.findElement(By.id("calculated-display")).getAttribute("value").toString();
 		System.out.println(result);	
-		String Expected= "3";
+		String Expected= "0";
 		assertEquals(Expected,result);
 	}
 }
